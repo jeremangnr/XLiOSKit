@@ -11,12 +11,12 @@ Pod::Spec.new do |s|
   s.homepage     = "http://xmartlabs.com"
   s.summary      = "Xmarltabs iOS development kit."
   s.description  = <<-DESC
-                  Xmarltabs iOS development kit.
+                  Xmarltabs iOS development kit. Utility class for UIView, UIImageView, and several others
                    DESC
   s.author       = { 'Martin Barreto' => 'martin@xmartlabs.com', 'Miguel Revetria' => 'miguel@xmartlabs.com' }
-
   s.platform     = :ios
-  
+  s.source       = { :git => 'https://github.com/xmartlabs/XLiOSKit.git', :tag => s.version } 
+ 
   s.subspec 'arc' do |sp|
     sp.source_files = 'XLiOSKit/**/*.{m,h}'
     sp.requires_arc = true
