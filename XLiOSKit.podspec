@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "XLiOSKit"
-  s.version      = "0.8.0"
+  s.version      = "0.9.0"
   s.license      = {
     :type => 'Copyright',
     :text => <<-LICENSE
@@ -9,13 +9,13 @@ Pod::Spec.new do |s|
       LICENSE
   }
   s.homepage     = "http://xmartlabs.com"
-  s.summary      = "Xmarltabs iOS development kit."
+  s.summary      = "Xmartlabs iOS development kit."
   s.description  = <<-DESC
-                  Xmarltabs iOS development kit. Utility class for UIView, UIImageView, and several others
+                  Xmartlabs iOS development kit. Utility class for UIView, UIImageView, and several others
                    DESC
   s.author       = { 'Martin Barreto' => 'martin@xmartlabs.com', 'Miguel Revetria' => 'miguel@xmartlabs.com' }
   s.platform     = :ios
-  s.source       = { :git => 'https://github.com/xmartlabs/XLiOSKit.git', :tag => s.version } 
+  s.source       = { :git => 'https://github.com/jeremangnr/XLiOSKit.git', :tag => s.version } 
  
   s.subspec 'arc' do |sp|
     sp.source_files = 'XLiOSKit/**/*.{m,h}'
