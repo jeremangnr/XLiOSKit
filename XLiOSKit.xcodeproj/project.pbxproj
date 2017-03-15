@@ -58,7 +58,7 @@
 		28A5E6841A05A5C900B3F15A /* UIButton+XLAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 28A5E6821A05A5C900B3F15A /* UIButton+XLAdditions.h */; };
 		28A5E6851A05A5C900B3F15A /* UIButton+XLAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A5E6831A05A5C900B3F15A /* UIButton+XLAdditions.m */; };
 		28B0368C1870FB9B00477BF5 /* UIViewController+XLAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B0368B1870FB9B00477BF5 /* UIViewController+XLAdditions.m */; };
-		28B2EF6917834078002B2641 /* KeychainItemWrapper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28BEA4BD1778C52A00CDA9D2 /* KeychainItemWrapper.h */; };
+		28B2EF6917834078002B2641 /* XLKeychainItemWrapper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28BEA4BD1778C52A00CDA9D2 /* XLKeychainItemWrapper.h */; };
 		28BCC80C18B692A5008D2923 /* XLCustomProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 282D6D4517A5EE19003FD6C3 /* XLCustomProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28BCC80D18B692A5008D2923 /* XLTitledAndCancellableProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = B205532F17A6C63900C6530E /* XLTitledAndCancellableProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28BCC80E18B692A5008D2923 /* XLImageSubtitledView.h in Headers */ = {isa = PBXBuildFile; fileRef = 28548B2B1787422F007B45D5 /* XLImageSubtitledView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -86,9 +86,9 @@
 		28BCC83218B692A5008D2923 /* ALAssetsLibrary+XLAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F49CAC1899FEE500A70660 /* ALAssetsLibrary+XLAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28BCC83318B692A5008D2923 /* XLKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 28C8EE021770F19A00AFB98C /* XLKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28BCC83418B692C1008D2923 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 284B179417AC86B5004146D1 /* Reachability.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		28BCC83518B692C1008D2923 /* KeychainItemWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 28BEA4BD1778C52A00CDA9D2 /* KeychainItemWrapper.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		28BCC83518B692C1008D2923 /* XLKeychainItemWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 28BEA4BD1778C52A00CDA9D2 /* XLKeychainItemWrapper.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		28BCC84018B69B41008D2923 /* UIApplication+XLAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 284B177E17A9D479004146D1 /* UIApplication+XLAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		28BEA4BF1778C57F00CDA9D2 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BEA4BE1778C52A00CDA9D2 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		28BEA4BF1778C57F00CDA9D2 /* XLKeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BEA4BE1778C52A00CDA9D2 /* XLKeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		28C8EDFE1770F19A00AFB98C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C8EDFD1770F19A00AFB98C /* Foundation.framework */; };
 		28C8EE031770F19A00AFB98C /* XLKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 28C8EE021770F19A00AFB98C /* XLKit.h */; };
 		28C8EE051770F19A00AFB98C /* XLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C8EE041770F19A00AFB98C /* XLKit.m */; };
@@ -143,7 +143,7 @@
 				282D6D4A17A5EE5E003FD6C3 /* XLCustomProgressView.h in CopyFiles */,
 				28DF7764178B18F60025696D /* UIColor+XLAdditions.h in CopyFiles */,
 				28548B34178747BB007B45D5 /* XLImageSubtitledView.h in CopyFiles */,
-				28B2EF6917834078002B2641 /* KeychainItemWrapper.h in CopyFiles */,
+				28B2EF6917834078002B2641 /* XLKeychainItemWrapper.h in CopyFiles */,
 				28F03807177E3E9400DBE656 /* XLNonRoutableNavigationViewController.h in CopyFiles */,
 				28F037FF177DE90D00DBE656 /* NSJSONSerialization+XLAdittions.h in CopyFiles */,
 				287B915E177BC70B00F556F1 /* NSManagedObject+Additions.h in CopyFiles */,
@@ -202,8 +202,8 @@
 		28A5E6831A05A5C900B3F15A /* UIButton+XLAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+XLAdditions.m"; path = "Category/UIButton+XLAdditions.m"; sourceTree = "<group>"; };
 		28B0368A1870FB9B00477BF5 /* UIViewController+XLAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+XLAdditions.h"; path = "Category/UIViewController+XLAdditions.h"; sourceTree = "<group>"; };
 		28B0368B1870FB9B00477BF5 /* UIViewController+XLAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+XLAdditions.m"; path = "Category/UIViewController+XLAdditions.m"; sourceTree = "<group>"; };
-		28BEA4BD1778C52A00CDA9D2 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KeychainItemWrapper.h; path = ../XLiOSKit_noARC/KeychainItemWrapper.h; sourceTree = "<group>"; };
-		28BEA4BE1778C52A00CDA9D2 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KeychainItemWrapper.m; path = ../XLiOSKit_noARC/KeychainItemWrapper.m; sourceTree = "<group>"; };
+		28BEA4BD1778C52A00CDA9D2 /* XLKeychainItemWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XLKeychainItemWrapper.h; path = ../XLiOSKit_noARC/XLKeychainItemWrapper.h; sourceTree = "<group>"; };
+		28BEA4BE1778C52A00CDA9D2 /* XLKeychainItemWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = XLKeychainItemWrapper.m; path = ../XLiOSKit_noARC/XLKeychainItemWrapper.m; sourceTree = "<group>"; };
 		28C8EDFA1770F19A00AFB98C /* libXLiOSKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXLiOSKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C8EDFD1770F19A00AFB98C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		28C8EE011770F19A00AFB98C /* XLiOSKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XLiOSKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -313,8 +313,8 @@
 		28BEA4B91778B19600CDA9D2 /* Keychain */ = {
 			isa = PBXGroup;
 			children = (
-				28BEA4BD1778C52A00CDA9D2 /* KeychainItemWrapper.h */,
-				28BEA4BE1778C52A00CDA9D2 /* KeychainItemWrapper.m */,
+				28BEA4BD1778C52A00CDA9D2 /* XLKeychainItemWrapper.h */,
+				28BEA4BE1778C52A00CDA9D2 /* XLKeychainItemWrapper.m */,
 			);
 			name = Keychain;
 			sourceTree = "<group>";
@@ -482,7 +482,7 @@
 				28BCC83218B692A5008D2923 /* ALAssetsLibrary+XLAdditions.h in Headers */,
 				28BCC83318B692A5008D2923 /* XLKit.h in Headers */,
 				28BCC83418B692C1008D2923 /* Reachability.h in Headers */,
-				28BCC83518B692C1008D2923 /* KeychainItemWrapper.h in Headers */,
+				28BCC83518B692C1008D2923 /* XLKeychainItemWrapper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,7 +586,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28BEA4BF1778C57F00CDA9D2 /* KeychainItemWrapper.m in Sources */,
+				28BEA4BF1778C57F00CDA9D2 /* XLKeychainItemWrapper.m in Sources */,
 				28C8EE051770F19A00AFB98C /* XLKit.m in Sources */,
 				2879CD2318E0F91900B66A94 /* XLButtonTableViewCell.m in Sources */,
 				28031CEF1771144A00FB6A61 /* UILabel+XLAdditions.m in Sources */,
